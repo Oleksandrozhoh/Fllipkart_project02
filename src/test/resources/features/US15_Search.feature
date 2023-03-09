@@ -6,5 +6,11 @@ Feature: Search functionality
   "Showing ... results for "wooden spoon"
 
   Scenario:
+    Given user is on the main page
+    When user types "wooden spoon" in the search box
+    Then user should see "wooden spoon stand" in the suggested options
+    When user selects "wooden spoon stand" from the suggested options
+    Then user should be launched to the page that contains "wooden spoon stand" in title
+
 
 
