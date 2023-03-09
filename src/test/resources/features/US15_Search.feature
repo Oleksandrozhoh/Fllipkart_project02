@@ -5,7 +5,7 @@ Feature: Search functionality
   then verify the header:
   "Showing ... results for "wooden spoon"
 
-  Scenario:
+  Scenario: Verify search functionality
     Given user is on the main page
     When user types "wooden spoon" in the search box
     Then user should see "wooden spoon stand" in the suggested options
