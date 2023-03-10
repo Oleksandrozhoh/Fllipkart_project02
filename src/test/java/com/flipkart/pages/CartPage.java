@@ -21,6 +21,10 @@ public class CartPage {
     @FindBy(xpath = "//div[contains(text(),'Successfully removed')]")
     public WebElement popUpRemovedMessage;
 
+    @FindBy(xpath = "//div[.='Saved For Later (1)']")
+    public WebElement saveForLaterList;
+
+
     @FindBy(xpath = "//div[.='Missing Cart items?']")
     public WebElement emptyCart_message;
 }
