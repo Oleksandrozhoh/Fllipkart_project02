@@ -10,6 +10,9 @@ public class MainPage extends BasePage {
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement searchButton;
 
+    @FindBy (xpath = "//div[contains(@class,'row')]/../../button")
+    public WebElement closeLoginSugestionButton;
+
     @FindBy(xpath = "//a[@title='urban platter Wooden Olive Spoon']") //US12
     public WebElement woodenOliveSpoon;
 

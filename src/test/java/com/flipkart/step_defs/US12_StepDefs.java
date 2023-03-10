@@ -14,6 +14,9 @@ public class US12_StepDefs {
     @Given("user is on the main page")
     public void user_is_on_the_main_page() {
         Driver.getDriver().get("https://www.flipkart.com");
+        if (mainPage.closeLoginSugestionButton.isDisplayed()){
+            mainPage.closeLoginSugestionButton.click();
+        }
 
     }
     @When("user adds a product to the cart")
