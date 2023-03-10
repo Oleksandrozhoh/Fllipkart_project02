@@ -27,7 +27,7 @@
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
-                        <include>**/AlulaRunner*.java</include>
+                        <include>**/TestRunner*.java</include>
                     </includes>
                 </configuration>
             </plugin>
