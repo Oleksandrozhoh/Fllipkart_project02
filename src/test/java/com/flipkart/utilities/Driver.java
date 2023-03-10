@@ -55,7 +55,6 @@ public class Driver {
         }
         return driverPool.get();
     }
-
     public static void closeDriver(){
         if (driverPool.get() != null){
             driverPool.get().quit();
