@@ -1,5 +1,8 @@
 package com.flipkart.pages;
 
+import com.flipkart.utilities.ConfigurationReader;
+import com.flipkart.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -13,16 +16,20 @@ public class MainPage extends BasePage {
     @FindBy (xpath = "//div[contains(@class,'row')]/../../button")
     public WebElement closeLoginSugestionButton;
 
-    @FindBy(xpath = "//a[@title='urban platter Wooden Olive Spoon']") //US12
-    public WebElement woodenOliveSpoon;
+    @FindBy(xpath = "//a[@title='KADENCE KXC KAD-SAX-KXB Alto Saxophone']") //US12
+    public WebElement coolSax;
 
-    @FindBy(xpath = "//button[@class='_2KpZ6l _2U9uOA _3v1-ww']") //US12
+    @FindBy(xpath = "//div[normalize-space()='Price -- High to Low']") //US12
+    public WebElement priceHighToLowBtn;
+
+    @FindBy() //US12
+    public WebElement addToCartBtn;
+
+    @FindBy(xpath = "//div[@class='KK-o3G']")  //US12
     public WebElement goToCartBtn;
 
-    @FindBy(xpath = "//a[normalize-space()='urban platter Wooden Olive Spoon']")  //US12
-    public WebElement spoonInTheCart;
-
-    @FindBy(xpath = "//a[@title='urban platter Wooden Olive Spoon']")
+    @FindBy(xpath = "//a[contains(text(),'Roland PD-AE-05 AE-05 Aerophone GO Digital Wind In')]")
     public WebElement expectedText;
+
 
 }
