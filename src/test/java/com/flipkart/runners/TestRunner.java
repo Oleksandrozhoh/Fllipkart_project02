@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
             publish = true,
             features = "src/test/resources/features",
             glue = "com/flipkart/step_defs",
-            tags = "",
+            tags = "@soukaina",
             dryRun = false
     )
 
