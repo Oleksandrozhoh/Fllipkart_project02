@@ -18,6 +18,8 @@ public class MainPage extends BasePage{
     @FindBy (xpath = "//ul//li/div/a/div[2]")
     public List<WebElement> suggestedOptionsBelowSearchBox;
 
+
+
     @FindBy (xpath = "//div[contains(@class,'row')]/../../button")
     public WebElement closeLoginSugestionButton;
 
@@ -26,6 +28,11 @@ public class MainPage extends BasePage{
 
     @FindBy (xpath = "//li")
     public WebElement searchBoxDropdownFirstOption;
+
+
+
+    @FindBy (className = "_3SkBxJ")
+    public WebElement cart_btn;
 
 
 
